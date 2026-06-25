@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .movie-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .movie-card {
+            background: white;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 15px;
+        }
+
+        .movie-info h2 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .movie-info p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Popular Movies</h1>
+
+    <div class="movie-container">
+
+        <div class="movie-card">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600"
+                 alt="Inception">
+            <div class="movie-info">
+                <h2>Inception</h2>
+                <p>
+                    A mind-bending science fiction thriller directed by
+                    Christopher Nolan.
+                </p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600"
+                 alt="Interstellar">
+            <div class="movie-info">
+                <h2>Interstellar</h2>
+                <p>
+                    A journey through space and time to save humanity.
+                </p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600"
+                 alt="Avatar">
+            <div class="movie-info">
+                <h2>Avatar</h2>
+                <p>
+                    An epic science fiction adventure set on the world of Pandora.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
