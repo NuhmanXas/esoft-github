@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Favorite Movies</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    background:#f4f4f4;
+    color:#222;
+}
+
+/* Header */
+header{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:2.8rem;
+    margin-bottom:10px;
+}
+
+header span{
+    color:#f97316;
+}
+
+header p{
+    color:#cbd5e1;
+}
+
+.divider{
+    width:70px;
+    height:4px;
+    background:#f97316;
+    margin:20px auto;
+    border-radius:5px;
+}
+
+/* Main */
+main{
+    max-width:900px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.movie-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:50px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.movie-card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.movie-body{
+    padding:30px;
+}
+
+.movie-number{
+    color:#f97316;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.movie-body h2{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.movie-body p{
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* Footer */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>IAM Najahi Ahamed , <span>and These Are My Favorite Movies</span></h1>
+    <p>Three Amazing Movies That I Love Watching</p>
+    <div class="divider"></div>
+</header>
+
+<main>
+
+    <!-- Movie 1 -->
+    <article class="movie-card">
+        <img src="https://image.tmdb.org/t/p/original/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg" alt="Avatar">
+        <div class="movie-body">
+            <div class="movie-number">MOVIE 01</div>
+            <h2>Avatar (2009)</h2>
+            <p>
+                Avatar is a science fiction movie directed by James Cameron.
+                The story takes place on the beautiful planet Pandora, where
+                humans attempt to exploit natural resources while the native
+                Na'vi people fight to protect their home. The movie became
+                famous worldwide for its visual effects, storytelling, and
+                immersive cinematic experience.
+            </p>
+        </div>
+    </article>
+
+    <!-- Movie 2 -->
+    <article class="movie-card">
+        <img src="https://image.tmdb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Avengers Endgame">
+        <div class="movie-body">
+            <div class="movie-number">MOVIE 02</div>
+            <h2>Avengers: Endgame (2019)</h2>
+            <p>
+                Avengers: Endgame is one of Marvel Studios' most successful
+                superhero films. After the devastating events caused by Thanos,
+                the Avengers unite for one final mission to restore balance to
+                the universe. The movie features action, emotion, teamwork,
+                and unforgettable moments that made it a global blockbuster.
+            </p>
+        </div>
+    </article>
+
+    <!-- Movie 3 -->
+    <article class="movie-card">
+        <img src="https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg" alt="Interstellar">
+        <div class="movie-body">
+            <div class="movie-number">MOVIE 03</div>
+            <h2>Interstellar (2014)</h2>
+            <p>
+                Interstellar is a science fiction masterpiece directed by
+                Christopher Nolan. The film follows a group of astronauts
+                traveling through space in search of a new home for humanity.
+                Combining science, emotion, and stunning visuals, the movie
+                explores themes of survival, time, love, and exploration
+                beyond Earth.
+            </p>
+        </div>
+    </article>
+
+</main>
+
+<footer>
+    <p>Created by Najahi Ahamed © 2026</p>
+</footer>
+
+</body>
+</html>

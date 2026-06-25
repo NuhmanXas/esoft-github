@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thushann's Movie Showcase</title>
+    <style>
+        /* CSS Settings */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 1px;
+            color: var(--accent);
+            text-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+        }
+
+        header p {
+            color: var(--text-muted);
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* CSS Grid for Responsive Layout */
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 80px auto;
+        }
+
+        /* Movie Card Styling */
+        .movie-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .poster-container {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .poster-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .movie-card:hover .poster-container img {
+            transform: scale(1.05);
+        }
+
+        .movie-info {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .movie-title {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .movie-genre {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .movie-summary {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        /* Interactive Like Button */
+        .like-btn {
+            background-color: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            align-self: flex-start;
+        }
+
+        .like-btn:hover {
+            background-color: var(--accent-hover);
+            border-color: var(--accent-hover);
+            color: #fff;
+        }
+
+        .like-btn.liked {
+            background-color: var(--accent);
+            color: #fff;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .poster-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Thushann's Movie Showcase</h1>
+        <p>A curated collection of my all-time favorite cinematic experiences.</p>
+    </header>
+
+    <main class="movie-container">
+        <article class="movie-card">
+            <div class="poster-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg" alt="3 Idiots Movie Poster">
+            </div>
+            <div class="movie-info">
+                <h2 class="movie-title">3 Idiots</h2>
+                <span class="movie-genre">Comedy / Drama</span>
+                <p class="movie-summary">Two friends embark on a quest to find their long-lost companion from engineering college. Along the way, they revisit their campus days and recall the friend who inspired them to think differently, even as the world labeled them "idiots."</p>
+                <button class="like-btn" onclick="toggleLike(this)">♡ Favorite</button>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <div class="poster-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg" alt="The Dark Knight Movie Poster">
+            </div>
+            <div class="movie-info">
+                <h2 class="movie-title">The Dark Knight</h2>
+                <span class="movie-genre">Action / Crime / Drama</span>
+                <p class="movie-summary">When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+                <button class="like-btn" onclick="toggleLike(this)">♡ Favorite</button>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <div class="poster-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg" alt="Interstellar Movie Poster">
+            </div>
+            <div class="movie-info">
+                <h2 class="movie-title">Interstellar</h2>
+                <span class="movie-genre">Sci-Fi / Adventure</span>
+                <p class="movie-summary">As Earth's future becomes increasingly uninhabitable, a team of explorers travels through a newly discovered wormhole in space. They face unimaginable challenges and heartbreaking choices in an attempt to ensure humanity's survival.</p>
+                <button class="like-btn" onclick="toggleLike(this)">♡ Favorite</button>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        // Simple JavaScript function to toggle the "Favorite" button state
+        function toggleLike(button) {
+            // Toggle the 'liked' CSS class
+            button.classList.toggle('liked');
+            
+            // Change the text based on whether it is liked or not
+            if (button.classList.contains('liked')) {
+                button.innerHTML = '♥ Favorited';
+            } else {
+                button.innerHTML = '♡ Favorite';
+            }
+        }
+    </script>
+
+</body>
+</html>
