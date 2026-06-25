@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haneef Favorite Movies</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141E30, #243B55);
+            min-height:100vh;
+            text-align:center;
+            color:white;
+        }
+
+        h1{
+            font-size:70px;
+            margin-top:40px;
+            color:#FFD700;
+            text-shadow: 3px 3px 8px black;
+        }
+
+        h2{
+            font-size:45px;
+            margin-top:20px;
+            margin-bottom:50px;
+            color:white;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+            padding:20px;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            width:320px;
+            padding:20px;
+            border-radius:20px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.4);
+            transition:0.4s;
+        }
+
+        .card:hover{
+            transform: translateY(-10px) scale(1.03);
+        }
+
+        .card img{
+            width:100%;
+            height:420px;
+            object-fit:cover;
+            border-radius:15px;
+            border:3px solid white;
+        }
+
+        .card h3{
+            font-size:40px;
+            margin:15px 0;
+            color:#FFD700;
+        }
+
+        .card p{
+            font-size:22px;
+            line-height:1.5;
+            color:#f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>I'm Haneef</h1>
+    <h2>My Favorite Movies</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="images/leo.jpg" alt="Leo">
+            <h3>Leo</h3>
+            <p>Action thriller movie starring Vijay with mass action scenes.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/vikarm.jpg" alt="Vikram">
+            <h3>Vikram</h3>
+            <p>Action-packed movie starring Kamal Haasan with powerful story.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/jailer.jpg" alt="Jailer">
+            <h3>Jailer</h3>
+            <p>Superstar Rajinikanth mass entertainer with powerful performance.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
