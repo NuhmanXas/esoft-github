@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thushann's Movie Showcase</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        header { margin-bottom: 40px; }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .movie-card {
+            background: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease; /* Added a smooth hover effect */
+        }
+        .movie-card:hover {
+            transform: scale(1.05); /* Makes the card pop out when you hover over it */
+        }
+        .movie-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        h2 { color: #bb86fc; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Thushann's Movie Showcase</h1>
+    </header>
+
+    <div class="container">
+        <!-- Movie 1 -->
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="The Godfather">
+            <h2>The Godfather</h2>
+            <p><strong>Genre:</strong> Crime/Drama</p>
+            <p>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5h.jpg" alt="The Matrix">
+            <h2>The Matrix</h2>
+            <p><strong>Genre:</strong> Sci-Fi/Action</p>
+            <p>A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/39j5aB9T5yZJdGkK3wD2j3k3K1k.jpg" alt="Spirited Away">
+            <h2>Spirited Away</h2>
+            <p><strong>Genre:</strong> Animation/Fantasy</p>
+            <p>During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits.</p>
+        </div>
+    </div>
+
+</body>
+</html>
