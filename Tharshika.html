@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Favorite Movies</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    min-height:100vh;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:40px;
+    font-size:50px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.movie-card{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.4s;
+}
+
+.movie-card:hover{
+    transform:translateY(-12px);
+}
+
+.movie-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+.content h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.content p{
+    color:#555;
+    line-height:1.7;
+    text-align:justify;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    margin-top:40px;
+    font-size:18px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>My Favorite Movies</h1>
+
+<div class="container">
+
+    <!-- Avatar -->
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600" alt="Avatar">
+
+        <div class="content">
+            <h2>Avatar</h2>
+
+            <p>
+                Avatar is a science fiction epic directed by James Cameron.
+                The movie takes place on the beautiful planet Pandora.
+                It features stunning visual effects and an engaging story.
+                Avatar is admired for its creativity and breathtaking world-building.
+            </p>
+        </div>
+    </div>
+
+    <!-- Swapped -->
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600" alt="Swapped">
+
+        <div class="content">
+            <h2>Swapped</h2>
+
+            <p>
+                Swapped is a story that explores life through unexpected changes.
+                The characters experience situations that transform their perspectives.
+                It highlights friendship, understanding, and personal growth.
+                The movie delivers meaningful lessons in an entertaining way.
+            </p>
+        </div>
+    </div>
+
+    <!-- Stranger Things -->
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600" alt="Stranger Things">
+
+        <div class="content">
+            <h2>Stranger Things</h2>
+
+            <p>
+                Stranger Things is a popular science fiction and horror series.
+                The story follows a group of friends facing supernatural mysteries.
+                It combines adventure, suspense, and emotional moments.
+                The show is loved for its characters and exciting storyline.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 My Favorite Movies | Created with HTML & CSS
+</footer>
+
+</body>
+</html>
