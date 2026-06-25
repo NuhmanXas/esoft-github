@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuhman's Favorite Movies</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f5f0;
+      color: #1a1a1a;
+    }
+
+    /* ── Header ── */
+    header {
+      background-color: #1a1a2e;
+      color: #fff;
+      padding: 60px 40px 50px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #b0b0c8;
+      font-style: italic;
+    }
+
+    header span {
+      color: #e94560;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      width: 60px;
+      height: 4px;
+      background: #e94560;
+      margin: 18px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ── Main content ── */
+    main {
+      max-width: 860px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+
+    /* ── Movie card ── */
+    .movie-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 60px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .movie-body {
+      padding: 32px 36px 36px;
+    }
+
+    .movie-number {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #e94560;
+      margin-bottom: 8px;
+    }
+
+    .movie-body h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #1a1a2e;
+    }
+
+    .movie-body p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #444;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background-color: #1a1a2e;
+      color: #7070a0;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: #e94560;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>I'm <span>Nuhman</span>, and These Are My Favorite Movies</h1>
+    <p>Three films that stayed with me long after the credits rolled.</p>
+    <div class="divider"></div>
+  </header>
+
+  <main>
+
+    <!-- Movie 1 -->
+    <article class="movie-card">
+      <img
+        src="https://image.tmdb.org/t/p/original/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+        alt="Interstellar banner"
+      />
+      <div class="movie-body">
+        <div class="movie-number">No. 01</div>
+        <h2>Interstellar (2014)</h2>
+        <p>
+          Christopher Nolan's epic science-fiction masterpiece follows astronaut Cooper and a
+          team of scientists who travel through a wormhole near Saturn in search of a new home
+          for humanity. As Earth's resources dwindle and crop blights threaten civilization,
+          Cooper must make an impossible choice — save the world or return to his children.
+          With breathtaking visuals, a hauntingly beautiful Hans Zimmer score, and a story
+          that ties love and physics together in ways that linger for days, <em>Interstellar</em>
+          is unlike anything else in cinema. It reminds you that the universe is enormous,
+          but the bond between a father and daughter is even larger.
+        </p>
+      </div>
+    </article>
+
+    <!-- Movie 2 -->
+    <article class="movie-card">
+      <img
+        src="https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+        alt="The Dark Knight banner"
+      />
+      <div class="movie-body">
+        <div class="movie-number">No. 02</div>
+        <h2>The Dark Knight (2008)</h2>
+        <p>
+          More than a superhero film, <em>The Dark Knight</em> is a riveting crime drama that
+          asks hard questions about justice, chaos, and what it costs to be good in a corrupt
+          world. Batman faces his greatest threat yet — the Joker, a criminal mastermind with
+          no motive beyond pure anarchy. Heath Ledger's iconic, Oscar-winning portrayal of the
+          Joker remains one of the greatest screen performances ever captured on film.
+          Nolan crafts every scene with the precision of a thriller and the weight of a tragedy,
+          making this a movie you return to again and again, finding something new each time.
+        </p>
+      </div>
+    </article>
+
+    <!-- Movie 3 -->
+    <article class="movie-card">
+      <img
+        src="https://image.tmdb.org/t/p/original/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"
+        alt="Finding Forrester banner"
+      />
+      <div class="movie-body">
+        <div class="movie-number">No. 03</div>
+        <h2>Finding Forrester (2000)</h2>
+        <p>
+          William Forrester, the reclusive author of a single celebrated novel, crosses paths
+          with Jamal Wallace — a 16-year-old basketball prodigy from the Bronx with a secret
+          passion for writing. What unfolds is a beautiful mentorship story about talent,
+          trust, and the courage it takes to share your inner voice with the world.
+          Sean Connery delivers a warm, commanding performance as the aging writer who rediscovers
+          his own purpose through a young man who refuses to be boxed in. <em>Finding Forrester</em>
+          is quiet, tender, and deeply human — a film that makes you want to pick up a pen
+          and write the first sentence of something honest.
+        </p>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>Written with love by <strong>Nuhman</strong> &mdash; 2026</p>
+  </footer>
+
+</body>
+</html>
